@@ -1,7 +1,20 @@
 # ucsb-cs56-go
 travel recommendations based on real time data
 
-GO! 
+
+# Names
+* Sasha
+* Xinyi
+* Angie
+* Sean
+* Sarita
+* Siqi
+
+# Agreements
+* Communicate! If you don't know how to do something/if you feel in over your head/if you feel like can't pull your own weight, Communicate! 
+* Respect each others ideas
+* Be present, show up, don't bail! 
+
 
 # Who is this app for? 
 * PERSON A:  already kind of knows what they want to do 
@@ -34,5 +47,4 @@ What can be included later:
 * reviews/rating
 * Places outside of california/international
 * A “What’s nearby?” widget
-
 
