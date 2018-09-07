@@ -30,7 +30,13 @@
   <!-- what other software does our project depend on (third-party JARs, etc.) -->
   <dependencies>
 
-    
+    <!-- MongoDB NoSQL Database -->
+     <dependency>
+        <groupId>org.mongodb</groupId>
+        <artifactId>mongo-java-driver</artifactId>
+        <version>3.8.1</version>
+    </dependency>
+
     <!-- https://mvnrepository.com/artifact/com.sparkjava/spark-template-mustache -->
     <dependency>
       <groupId>com.sparkjava</groupId>
