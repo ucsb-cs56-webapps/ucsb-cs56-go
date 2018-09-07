@@ -1,0 +1,1 @@
+web: java $JAVA_OPTS -jar target/GoMain-1.0-jar-with-dependencies.jar
