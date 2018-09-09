@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+{{> head }}
+<body style="background-color:powderblue;">
+ {{> nav }}
+ <h1>Please fill out the interest_quiz below</h1>
+
+<form action="/feedback" method="post">
+  1.Do you want to go to North California or South California? (NC or SC)<br>
+  <input type="text" style="font-size:30px;" name="q1" value="">
+  <br>
+  2. How far are you willing to travel? ( close or far)<br>
+  <input type="text" style="font-size:30px;" name="q2" value="">
+  <br><br>
+  3. What is your budget for the trip? ( cheap or expensive)<br>
+  <input type="text" style="font-size:30px;" name="q3" value="">
+  <br><br>
+  4. Do you prefer urban or nature (urban or nature)<br>
+  <input type="text" style="font-size:30px;" name="q4" value="">
+  <br>
+  <input type="submit" value="Submit your answers">
+</form>
+
+<p>If you click the "Submit" button, the form-data will be sent us and we will give you personal travel advice.</p>
+
+
+ {{> bootstrap-from-cdn-body }}
+</body>
+</html>
