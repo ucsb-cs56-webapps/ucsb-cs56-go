@@ -32,10 +32,10 @@ public class GoMain {
 		Map<String, Object> map = new HashMap<String, Object>();
        
 		
-        // mustache files are  in resources/templates directory
-        get("/", (rq, rs) -> new ModelAndView(map, "home.mustache"), new MustacheTemplateEngine());	
+    // mustache files are  in resources/templates directory
+    get("/", (rq, rs) -> new ModelAndView(map, "home.mustache"), new MustacheTemplateEngine());	
 	
-	get("/cities", (rq, rs) -> new ModelAndView(map, "cities.mustache"), new MustacheTemplateEngine());	
+	get("/places", (rq, rs) -> new ModelAndView(map, "places.mustache"), new MustacheTemplateEngine());	
 	
 	get("/popular", (rq, rs) -> new ModelAndView(map, "popular.mustache"), new MustacheTemplateEngine());	
 
