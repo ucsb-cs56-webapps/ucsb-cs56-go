@@ -3,8 +3,18 @@
 {{> head }}
 <body>
  {{> nav }}
- <h1>Welcome to the Go application!</h1>
- <p>Travel recommendations based on real time data </p>
+ <!-- https://bootstrapdocs.com/v3.3.6/docs/components/#navbar-->
+
+  <div class="jumbotron">
+	<h1>Welcome to the Go!</h1>
+ 	<p>You can find travel recommendations based on real time data. </p>
+ 	<p>If you are not sure where you want to go, take our Interest Quiz.</p>
+ 	<p> <a class="btn btn-primary btn-lg" href="/fill_quiz" role="button">Interest Quiz</a> 
+ 	</p>
+ </div>
+
+
+
  {{> bootstrap-from-cdn-body }}
 </body>
 </html>

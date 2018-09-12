@@ -1,0 +1,35 @@
+    <!-- This sets JavaScript mode in emacs -*- mode: Javascript;-*- -->
+<script>
+
+var site_globals = {};
+
+function handleGetPlaces(data) {
+    // write message to console (for debugging only)
+    console.log("handleGetPlaces: " + JSON.stringify(data));
+
+    // Get rid of places already in the table
+    $('tbody.place-table-body tr.place-data').remove();
+
+    // a for loop over the array of places    
+    $.each(data, function(i,place) {
+    var row = $("<tr></tr>");
+    row.addClass('place-data');
+    row.append($("<td></td>").text(place.title));
+    row.append($("<td></td>").text(place.description));
+    row.append($("<td></td>").text(JSON.stringify(place.categories)));
+    // Append this to every <tbody class="put-places-here"> element
+    $('tbody.place-table-body').append(row);
+    });
+
+}     
+
+$(document).ready(function() {
+
+    // load the places once when the page first loads
+    $.ajax({
+    url: "/api/places"
+    }).then(handleGetPlaces);
+
+});
+
+</script>
