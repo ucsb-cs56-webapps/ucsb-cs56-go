@@ -3,15 +3,22 @@
 {{> head }}
 <body>
  {{> nav }}
- <h1>List of Places</h1>
- <p>There will be a list of places soon, here is what that list will look like </p>
- <ul>
-  <li> Santa Barbara </li>
-  <li> Los Angeles </li>
-  <li> San Francisco </li>
- </ul>
- {{> bootstrap-from-cdn-body }}
+ <h1>Places</h1>
+
+ <!-- Some of the class values are taken from
+      https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
+ 
+ 
+ <table class="places-table table table-striped table-hover table-responsive table-condensed">
+   <thead>
+     <tr><th>Place</th><th>Description</th><th>Categories</th></tr>
+   </thead>
+   <tbody class="place-table-body"></tbody>
+ </table>
+
+ 
+ {{> scripts-from-cdn}}
+ {{> site-specific-javascript-place }}
 </body>
 </html>
 
-{{! THIS PAGE SHOULD SPEAK TO THE MONGO DATABASEEE TO GET DATA ON PLACES}}
