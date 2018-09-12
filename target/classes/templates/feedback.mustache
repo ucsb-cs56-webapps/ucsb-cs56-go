@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+{{> head }}
+<body style="background-color:pink;">
+ {{> nav }}
+ <h1>Here is your travel advice:</h1>
+
+<p style="font-size:60px;">{{feedback}}</p>
+{{#imgPath}}
+<img src = "{{imgPath}}">
+{{/imgPath}}
+{{^imgPath}}
+  No image available
+{{/imgPath}}
+ {{> bootstrap-from-cdn-body }}
+</body>
+</html>

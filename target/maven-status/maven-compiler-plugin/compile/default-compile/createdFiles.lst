@@ -1,6 +1,6 @@
-edu/ucsb/cs56/go/GoMain.class
 edu/ucsb/cs56/go/Place.class
+edu/ucsb/cs56/go/Model$PlaceUpdateResult.class
+edu/ucsb/cs56/go/GoMain.class
 edu/ucsb/cs56/go/Model.class
 edu/ucsb/cs56/go/BlogService.class
-edu/ucsb/cs56/go/Model$PlaceUpdateResult.class
 edu/ucsb/cs56/go/RouteEntry.class

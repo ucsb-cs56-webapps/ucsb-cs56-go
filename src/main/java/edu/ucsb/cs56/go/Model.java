@@ -56,7 +56,9 @@ public class Model {
 		log.debug("Connected to MongoDB, db="+this.db+" client="+this.client);
 
 		// get a handle to the "places" collection
+
         placeCollection = this.db.getCollection("places");
+ 
 		
 	}
     
