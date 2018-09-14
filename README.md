@@ -72,12 +72,12 @@ What can be included later:
 . env.sh
 `
 in command line
-* Type mvn compile; mvn exec:java
+* Type `mvn compile` and then `mvn exec:java`
 * In a separate tab in command line, go into the testdata file (in the go repository)
-* Typing curl http://localhost:4567/api/places should give you [ ] 
-* Typing curl -d @place1.json http://localhost:4567/api/places should add the first place to the database
-* Now when you type curl http://localhost:4567/api/places again, the first place and its id should show up. If you go into your places collection in your mLab database, you should see the first place. 
-* Now redo curl -d but with place2 and place3
+* Typing `curl http://localhost:4567/api/places` should give you [ ] 
+* Typing `curl -d @place1.json http://localhost:4567/api/places` should add the first place to the database
+* Now when you type `curl http://localhost:4567/api/places` again, the first place and its id should show up. If you go into your places collection in your mLab database, you should see the first place. 
+* Now redo `curl -d ...` but with place2 and place3
 
 **3. Run the application**  
 * If you type localhost:4567/api/places in your web browser's search bar, you should see the list of places that you have added
