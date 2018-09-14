@@ -49,9 +49,9 @@ What can be included later:
 
 # Current steps to compile and run application 
 
-# 1. Create the database with mLab and MongoDB
+**1. Create the database with mLab and MongoDB**
 
-* Go into mLab and create a new database name go.
+* Go into mLab and create a new database named go.
 * In the repository, cp env.sh.EXAMPLE env.sh in order to make an env.sh file.
 * In the go database create a new user and record the username and password into the env.sh file.
 * Also record the name of database, host name, and port name which can be found in the go database page.
@@ -65,7 +65,8 @@ What can be included later:
 '''
 * Your places collection should be empty.
 
-# 2. Add data to the database  
+**2. Add data to the database**  
+
 * Go into the go repository. Type
 '''
 . env.sh
@@ -78,14 +79,14 @@ in command line
 * Now when you type curl http://localhost:4567/api/places again, the first place and its id should show up. If you go into your places collection in your mLab database, you should see the first place. 
 * Now redo curl -d but with place2 and place3
 
-# 3. Run the application  
+**3. Run the application**  
 * If you type localhost:4567/api/places in your web browser's search bar, you should see the list of places that you have added
 * If you type localhost:4567/ in the search bar and click on the places tab in the nav bar, you should see the list of places in a more readable format
 
 For more detailed tutorials on databases, visit these repos: 
-https://github.com/ucsb-cs56-pconrad/sparkjava-rest-mlab-frontend
-https://github.com/ucsb-cs56-pconrad/sparkjava-mongodb-mlab-tutorial
-https://github.com/ucsb-cs56-pconrad/sparkjava-rest-with-mlab
+* https://github.com/ucsb-cs56-pconrad/sparkjava-rest-mlab-frontend
+* https://github.com/ucsb-cs56-pconrad/sparkjava-mongodb-mlab-tutorial
+* https://github.com/ucsb-cs56-pconrad/sparkjava-rest-with-mlab
 
 
 
